@@ -62,7 +62,6 @@ fn main() {
         println!("Toppings:");
 
         let vals: Vec<&str> = t.collect();
-        println!("{:#?}", vals);
 
         for val in vals {
             match val {
@@ -71,7 +70,7 @@ fn main() {
                 "tomato" => println!("- {}", val),
                 "onions" => println!("- {}", val),
                 "cheese" => println!("- {}", val),
-                _ => println!("We don't have that"),
+                _ => println!("We don't have {}", val),
             }
         }
     }
